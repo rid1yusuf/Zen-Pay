@@ -18,4 +18,12 @@ public class JwtUtil {
                 .withExpiresAt(new Date(System.currentTimeMillis() + EXPIRATION_TIME))
                 .sign(Algorithm.HMAC256(SECRET_KEY));
     }
+
+    public String extractSubject(String token) {
+        return token;
+    }
+
+    public boolean validateToken(String token) {
+        return false;
+    }
 }

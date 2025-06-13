@@ -1,4 +1,4 @@
-package com.example.ZenPay.Backend.security;
+package com.example.ZenPay.Backend.security.config;
 
 import com.example.ZenPay.Backend.security.jwt.JwtAuthFilter;
 import org.springframework.context.annotation.Bean;
