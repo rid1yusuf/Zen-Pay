@@ -1,29 +1,9 @@
-package com.example.ZenPay.Backend.models;
+package com.example.ZenPay.Backend.dtos.requests;
 
-import jakarta.persistence.*;
-
-@Entity
-@Table(name ="users")
-
-public class User {
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long Id;
-
+public class RegisterRequest {
     private String email;
     private String password;
 
-
-    public User() {
-    }
-
-    public Long getId() {
-        return Id;
-    }
-
-    public void setId(Long id) {
-        Id = id;
-    }
 
     public String getEmail() {
         return email;
@@ -41,5 +21,5 @@ public class User {
         this.password = password;
     }
 
-
 }
+
